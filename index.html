@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arley Ricardo" />
+    <title>IMC</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <h1>IMC - Índice de massa corporal</h1>
+        </div>
+        <hr />
+    </header>
+    <main>
+        <div class="container2">
+            <form onsubmit="return false;">
+                <label id="altura1">Altura:</label><br />
+                <input type="text" placeholder="0,00" id="altura2" onkeydown="verificarInput(event);"/><label> m</label>
+                <br /><br />
+                <label>Peso:</label><br />
+                <input type="text" placeholder="0,00" id="peso" onkeydown="verificarInput(event);"/><label> kg</label>
+                <br /><br />
+                <button class="calcular" onclick="calcularImc();">Calcular IMC</button>
+                <button type="reset">Reiniciar</button>
+            </form>
+            <hr />
+            <h2 id="result"></h2>
+            <h2 id="imc"></h2>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
